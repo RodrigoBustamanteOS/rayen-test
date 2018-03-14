@@ -92,6 +92,11 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
+          {
+            "name": "aurelia-dialog",
+            "path": "../node_modules/aurelia-dialog/dist/amd",
+            "main": "aurelia-dialog"
+          },
           "text"
         ]
       }
