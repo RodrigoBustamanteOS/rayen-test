@@ -42,6 +42,19 @@
           "node_modules/requirejs/require.js"
         ],
         "dependencies": [
+          "jquery",
+          {
+            "name": "bootstrap",
+            "path": "../node_modules/bootstrap/dist",
+            "main": "js/bootstrap.min",
+            "deps": [
+              "jquery"
+            ],
+            "exports": "$",
+            "resources": [
+              "css/bootstrap.css"
+            ]
+          },
           "aurelia-binding",
           "aurelia-bootstrapper",
           "aurelia-dependency-injection",
@@ -63,19 +76,6 @@
           "aurelia-task-queue",
           "aurelia-templating",
           "aurelia-templating-binding",
-          "jquery",
-          {
-            "name": "bootstrap",
-            "path": "../node_modules/bootstrap/dist",
-            "main": "js/bootstrap.min",
-            "deps": [
-              "jquery"
-            ],
-            "exports": "$",
-            "resources": [
-              "css/bootstrap.css"
-            ]
-          },
           {
             "name": "aurelia-templating-resources",
             "path": "../node_modules/aurelia-templating-resources/dist/amd",
@@ -135,6 +135,13 @@
     "displayName": "Minimal Minification",
     "fileExtension": ".html",
     "source": "src/**/*.html"
+  },
+  "sassProcessor": {
+    "id": "sass",
+    "displayName": "Sass",
+    "fileExtension": ".scss",
+    "source": "styles-src/**/*.scss",
+    "target": "styles"
   },
   "cssProcessor": {
     "id": "none",
