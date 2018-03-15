@@ -94,6 +94,14 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
+          {
+            "name": "aurelia-datatable",
+            "path": "../node_modules/aurelia-datatable/dist/amd",
+            "main": "aurelia-datatable",
+            "resources": [
+              "bootstrap/datatable.html"
+            ]
+          },
           "text"
         ]
       }
