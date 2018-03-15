@@ -1,4 +1,9 @@
 <template>
+  <style>
+    .bg-blue {
+      background-color: #9EC0EE;
+    }
+  </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-blue">
     <!-- <a class="navbar-brand" href="#">Rayen 2020</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -6,16 +11,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link dropdown-toggle" href="#" id="administrativo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrativo</a>
         </li>
         <li class="nav-item">
           <a class="nav-link dropdown-toggle" href="#" id="herramientas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Herramientas</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link dropdown-toggle" href="#" id="dev" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dev</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salir</a>
         </li>
       </ul>
     </div>
