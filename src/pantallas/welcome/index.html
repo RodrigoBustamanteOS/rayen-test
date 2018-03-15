@@ -1,4 +1,16 @@
 <template>
   <h1>From welcome</h1>
   <button click.delegate="getApi()">Test</button>
+  <table class="table" if.bind="aux">
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Cuerpo</th>
+    </tr>
+    <tr repeat.for="post of posts">
+      <td>${post.id}</td>
+      <td>${post.title}</td>
+      <td>${post.body}</td>
+    </tr>
+  </table>
 </template>
