@@ -1,4 +1,4 @@
-<template>
+<template bindable="router">
   <style>
     .bg-blue {
       background-color: #9EC0EE;
@@ -15,12 +15,6 @@
         <li class="nav-item">
           <a class="nav-link dropdown-toggle" href="#" id="administrativo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrativo</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" href="#" id="herramientas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Herramientas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" href="#" id="dev" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dev</a>
-        </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -29,4 +23,10 @@
       </ul>
     </div>
   </nav>
+
+  <ul>
+    <li repeat.for="nav of router.navigation">
+      <a href.bind="nav.href">asdasd</a>
+    </li>
+  </ul>
 </template>

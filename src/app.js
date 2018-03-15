@@ -3,9 +3,11 @@ export class App {
     this.message = 'Hello World!';
   }
 
-  configureRouter(config, router){
+  configureRouter(config, router) {
     config.map([
-      { route: '', name: 'Inicio', moduleId: './pantallas/welcome/index', title: 'Inicio' }
-    ])
+      { route: '', name: 'Inicio', moduleId: './pantallas/welcome/index', title: 'Inicio' },
+      { route: 'admision', name: 'Admision', moduleId: './pantallas/admision/index', title: 'Admisión' }
+    ]);
+    console.log(router.routes);
   }
 }
