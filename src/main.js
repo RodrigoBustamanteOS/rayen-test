@@ -4,6 +4,7 @@ export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .feature('resources');
+    // .plugin('aurelia-datatable');
 
   if (environment.debug) {
     aurelia.use.developmentLogging();
