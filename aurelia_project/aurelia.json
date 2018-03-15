@@ -55,6 +55,7 @@
               "css/bootstrap.css"
             ]
           },
+          "aurelia-fetch-client",
           "aurelia-binding",
           "aurelia-bootstrapper",
           "aurelia-dependency-injection",
@@ -76,6 +77,7 @@
           "aurelia-task-queue",
           "aurelia-templating",
           "aurelia-templating-binding",
+          "aurelia-fetch-client",
           {
             "name": "aurelia-templating-resources",
             "path": "../node_modules/aurelia-templating-resources/dist/amd",
