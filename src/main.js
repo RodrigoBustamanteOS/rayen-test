@@ -1,8 +1,6 @@
 import environment from './environment';
 import $ from 'jquery';
-// import 'bootstrap';
-// import moment from 'moment';
-
+import 'bootstrap';
 
 export function configure(aurelia) {
   aurelia.use

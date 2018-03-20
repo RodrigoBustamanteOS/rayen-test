@@ -3,21 +3,21 @@
   <button click.trigger="getApi()">Test</button> -->
   <!-- btn color #F19125 -->
   <style>
-    #innerDiv {
-        margin:8%; 
-        margin-left: auto; 
-        margin-right: auto; 
-        min-height: 364px; 
-        min-width: 320px;
-        max-width: 412px;
-        width: calc(100% - 40px);
-        padding: 36px;
-        margin-bottom: 28px;
-        background-color: #fff;
-        box-shadow: 0 2px 3px rgba(0,0,0,.55);
+    .innerDiv {
+      margin:8%; 
+      margin-left: auto; 
+      margin-right: auto; 
+      min-height: 364px; 
+      min-width: 320px;
+      max-width: 412px;
+      width: calc(100% - 40px);
+      padding: 36px;
+      margin-bottom: 28px;
+      background-color: #fff;
+      box-shadow: 0 2px 3px rgba(0,0,0,.55);
     }
   </style>
-  <form id="innerDiv">
+  <form class="innerDiv">
     <div class="form-group">
       <input type="text" class="form-control" value.bind="run & validate" placeholder="Run">
     </div>
