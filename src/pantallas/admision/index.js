@@ -3,7 +3,8 @@ export class Admision{
   configureRouter(config, router){
     config.title = "Admisión";
     config.map([
-      { route: 'testeo', name: 'testeo', moduleId: './routes/testeo/index' }
-    ])
+      { route: 'inscripcion', name: 'inscripcion', moduleId: './routes/inscripcion', nav: true, title: 'Inscripción'},
+      { route: 'informes', name: 'informes', moduleId: './routes/informes', nav: true, title: 'Informes'},
+    ]);
   }
 }
