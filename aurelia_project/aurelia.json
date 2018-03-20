@@ -30,6 +30,7 @@
       {
         "name": "vendor-bundle.js",
         "prepend": [
+          "node_modules/popper.js/dist/umd/popper.min.js",
           "node_modules/bluebird/js/browser/bluebird.core.js",
           {
             "path": "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird-no-long-stacktraces.js",
@@ -54,6 +55,11 @@
             "resources": [
               "css/bootstrap.css"
             ]
+          },
+          {
+            "name": "popper.js",
+            "path": "../node_modules/popper.js",
+            "main": "dist/umd/popper.min.js"
           },
           "aurelia-fetch-client",
           "aurelia-binding",
