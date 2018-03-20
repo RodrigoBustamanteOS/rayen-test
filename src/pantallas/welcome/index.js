@@ -14,4 +14,7 @@ export class Welcome {
         console.log(data);
       });
   }
+  hello() {
+    console.log('helloooo');
+  }
 }
